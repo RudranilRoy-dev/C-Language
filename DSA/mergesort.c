@@ -7,11 +7,12 @@ void merge(int arr[], int high, int low, int mid);
 int main()
 {
     int arr[] = {8, 3, 1, 5, 8, 9, 6, 4, 2, 7};
+    int size=(sizeof(arr) / sizeof(int));
     printf("Unsorted Array: ");
-    print(arr, (sizeof(arr) / sizeof(int)));
-    mergesort(arr, 0, (sizeof(arr) / sizeof(int)) - 1);
+    print(arr, size);
+    mergesort(arr, 0, size - 1);
     printf("Sorted Array: ");
-    print(arr, (sizeof(arr) / sizeof(int)));
+    print(arr, size);
 }
 
 void print(int arr[], int size)
@@ -69,4 +70,5 @@ void merge(int arr[], int low, int mid, int high)
     {
         arr[i] = newarr[i];
     }
+
 }
