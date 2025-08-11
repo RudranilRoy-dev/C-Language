@@ -22,7 +22,6 @@ void sort(int arr[], int size)
         }
         arr[j + 1] = temp;
     }
-    print(arr, size);
 }
 
 int main()
@@ -31,5 +30,6 @@ int main()
     int size = sizeof(arr) / sizeof(size);
     print(arr, size);
     sort(arr, size);
+    print(arr, size);
     return 0;
 }
